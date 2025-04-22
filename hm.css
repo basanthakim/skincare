@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    color: rgb(164, 124, 124) ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 11vh;
+    margin: 0px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: rgb(184, 138, 138);
+}
+nav .dropdown{
+    display: inline-block;
+}
+nav ul{
+    margin: 0px 150px 0px 0px;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0px 15px;
+  
+    
+}
+nav ul li a:hover{
+    color: rgba(98, 53, 74, 0.721);
+    transition: all 0.50s ease;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 19px;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+}
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+
+.sm1{
+    display: none;
+    position: absolute;
+    background-color: rgb(184, 138, 138);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    width: 100%;
+    left: 0;
+  }
+  .sm1 img{
+    width: vh;
+    border-radius: 50px;
+    box-shadow: 10vh white;
+    border-style: dashed;
+  }
+  .smimg{
+    margin: -69vh 0px 3vh 135vh;
+  }
+  .dropdown:hover .sm1 {
+    display: block;
+  }
+nav ul li:hover .sm1{
+    display: block;
+    position: absolute;
+    background: rgba(187, 142, 142, 0.712);
+    margin: 0px 0px 0px -15px;
+
+}
+
+ .sm1 ul{
+    display: block;
+    margin: 30px 40px 30px 30px;
+}
+ .sm1 ul li{
+    width: 150px;
+    padding: 10px;
+    background: transparent;
+    border-radius: 0;
+    text-align: center;
+    display: block;
+    font-weight: 500;
+    margin: 5vh 10vh 5vh 25vh ;
+}
+.sm1 ul li a{
+    color: white;
+}
+ .sm1 ul li:last-child{
+    border-bottom: none;
+}
+ .sm1 ul li a:hover{
+color: rgba(98, 53, 74, 0.721);
+}
+.ccon ul li{
+    display: inline-flex;
+    padding: 10px;
+    width: 40px;
+    margin-right: 10px;
+}
+.ccon a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+      padding: 10px;
+      transition: all 0.50s ease;
+}
+.ccon ul li a:hover{
+    color:rgba(98, 53, 74, 0.721) ;
+    z-index: -10vh;
+  
+}
+.logo a{
+   display: flex;
+   width: 40vh;
+   height: 30vh;
+   margin: 0px 0px 0px 10px;
+   cursor: pointer;
+}
+
+/* ====== تغيير لون الخلفية ====== */
+body {
+    background-color: rgb(243, 230, 232); /* لون متناسق مع الهيدر */
+    
+}
+
+/* ====== تصميم نموذج تسجيل الدخول ====== */
+.login-container {
+    background-color: white;
+    padding: 30px; /* Reduce padding */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 25%; /* Reduce width */
+    max-width: 400px; /* Reduce max-width */
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* ====== تحسين الحقول ====== */
+.login-container label {
+    display: block;
+    text-align: left;
+    margin: 5px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.login-container input {
+    width: calc(100% - 20px); /* جعل الحقول بنفس العرض */
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+}
+
+/* ====== زر تسجيل الدخول بنفس عرض حقل كلمة المرور ====== */
+.login-container button {
+    width: 100%; /* Ensures both have the same width */
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    box-sizing: border-box; /* Ensures padding and borders don't affect width */
+}
+
+.login-container button {
+    background-color: rgb(187, 142, 142);
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-container button:hover {
+    background-color: rgba(187, 142, 142, 0.953);
+}
+/* ====== رابط التسجيل ====== */
+.login-container p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.login-container a {
+    color: rgb(187, 142, 142);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* ====== تصميم نموذج تسجيل الدخول ====== */
+.signup-container {
+    background-color: white;
+    padding: 30px; /* Reduce padding */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 25%; /* Reduce width */
+    max-width: 400px; /* Reduce max-width */
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* ====== تحسين الحقول ====== */
+.signup-container label {
+    display: block;
+    text-align: left;
+    margin: 5px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.signup-container input {
+    width: calc(100% - 20px); /* جعل الحقول بنفس العرض */
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+}
+.signup-container input {
+    width: calc(100% - 20px); /* جعل الحقول بنفس العرض */
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+}
+/* ====== زر تسجيل الدخول بنفس عرض حقل كلمة المرور ====== */
+.signup-container button {
+    width: 100%; /* Ensures both have the same width */
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    box-sizing: border-box; /* Ensures padding and borders don't affect width */
+}
+
+.signup-container button {
+    background-color: rgb(187, 142, 142);
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.signup-container button:hover {
+    background-color: rgba(187, 142, 142, 0.953);
+}
+/* ====== رابط التسجيل ====== */
+.signup-container p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.signup-container a {
+    color:  rgb(187, 142, 142);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-container a:hover {
+    text-decoration: underline;
+}
